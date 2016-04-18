@@ -1,22 +1,57 @@
+# Welcome to Jekyll!
+#
+
 # Site settings
 title: Bamsing
+description: |
+  An Indie Action-Adventure game.
+owner: Bamsing # or company name
+first_published: 2016 # if migrating another site, the year of your first publish
 email: info@bamsing.com
-url: https://bamsing.com
-description: "Bamsing is an indie adventure game that you're sure to remember forever"
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary-dark: '#000000'
-  links: '#219ab3'
-
-# Footer settings
-footer: Bamsing
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://bamsing.com" # the base hostname & protocol for your site
 social:
-  - title: twitter
-    url: https://twitter.com/happypwn
+  twitter: https://twitter.com/happypwn
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  #facebook-official: https://facebook.com/<username>
+  #google-plus-square: https://plus.google.com/u/0/+<username>
+  #email: /contact/
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+#sass:
+#  style: compressed
