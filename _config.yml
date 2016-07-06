@@ -10,6 +10,7 @@ first_published: 2016 # if migrating another site, the year of your first publis
 email: pontus.lindgren@kirikoro.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://flintandcharlie.com" # the base hostname & protocol for your site
+analytics-google: 'UA-77458157-2'
 social:
   twitter: https://twitter.com/happypwn
   #github: https://github.com/<username>
