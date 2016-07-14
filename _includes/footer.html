@@ -7,7 +7,7 @@
     <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-envelope-o"
            ><span class="label">E-mail</span></a></li>
     {% else %}
-    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"
+    <li><a target="_blank" href="{{ socloc[1] }}" onclick="trackOutboundLink('{{ socloc[1] }}'); return false;" class="icon fa-{{ socloc[0] }}"
            ><span class="label">{{ socloc[0] }}</span></a></li>
     {% endif %}
     {% endif %}
@@ -20,6 +20,6 @@
       {% if diff contains '-' %}{{ site.first_published }},{% endif %}
     {% endif %}
     {{ thisyear }}
-    <a href="http://kirikoro.com">Kirikoro Studios</a></li>
+    <a href="http://kirikoro.com" onclick="trackOutboundLink('http://kirikoro.com'); return false;">Kirikoro Studios</a></li>
   </ul>
 </footer>

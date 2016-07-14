@@ -13,9 +13,9 @@
             <li><a target="_blank" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
             {% endif %}
             {% endfor %}
-            <li><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" class="icon fa-envelope-o"> Beta sign up</a></li>
-            <li><a target="_blank" href="http://twitter.com/happypwn" class="icon fa-twitter"> Twitter</a></li>
-            <li><a target="_blank" href="http://www.facebook.com/KirikoroStudios" class="icon fa-facebook">  Facebook</a></li>
+            <li><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" onclick="trackOutboundLink('http://goo.gl/forms/abKSefkEKr0f9fIU2'); return false;" class="icon fa-envelope-o"> Beta sign up</a></li>
+            <li><a target="_blank" href="http://twitter.com/happypwn" onclick="trackOutboundLink('http://twitter.com/happypwn'); return false;" class="icon fa-twitter"> Twitter</a></li>
+            <li><a target="_blank" href="http://www.facebook.com/KirikoroStudios" onclick="trackOutboundLink('http://www.facebook.com/KirikoroStudios'); return false;" class="icon fa-facebook">  Facebook</a></li>
             <!--<li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
                    class="icon fa-feed"> RSS Feed</a></li>-->
           </ul>
