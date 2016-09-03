@@ -10,7 +10,13 @@ layout: landing
 							<h2>{{ site.title }}</h2>
 							<p>{{ site.description | markdownify }}</p>
 							<ul class="actions">
-							 <li><span class="button special"><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" onclick="trackOutboundLink('http://goo.gl/forms/abKSefkEKr0f9fIU2'); return false;" class="icon fa-envelope-o">Beta sign up</a></span></li>
+
+							 <!-- <li><span class="button special"><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" onclick="trackOutboundLink('http://goo.gl/forms/abKSefkEKr0f9fIU2'); return false;" class="icon fa-envelope-o">Beta sign up</a></span></li> -->
+							 <li>
+								 <form id="input-form" action="" method="POST" target="no-target">
+							     <input id="input-email" placeholder="enter email" name="email" type="email"> <button class="button special" id="form-submit" type="submit">SIGN UP</button>
+							   </form>
+						  </li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>

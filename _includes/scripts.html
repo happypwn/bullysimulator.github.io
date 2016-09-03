@@ -6,3 +6,30 @@
 <script src="{{ "/js/util.js" | prepend: site.baseurl }}"></script>
 <!--[if lte IE 8]><script src="{{ "/js/ie/respond.min.js" | prepend: site.baseurl }}"></script><![endif]-->
 <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+<script>
+    function validateEmail (email) {
+        var email = email.replace("%40","@");
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    $('#input-form').submit(function(){
+      var email = encodeURIComponent($('#input-email').val());
+      if (!validateEmail(email)) {
+        <!-- This is validated in the backend too -->
+        console.log("fail");
+        $('#input-email').addClass('active').val('Invalid Email address');
+        $(this)[0].method="GET";
+        $(this)[0].action="#menu";
+        return;
+      }
+
+      var baseURL = 'https://docs.google.com/a/kirikoro.com/forms/d/e/1FAIpQLSfZhuwJ_Yf1uVsYVS-v-_eAkYs4169QD4WmvHLvOQewS5PD8A/formResponse?entry.2112211593=';
+      var submitRef = '&submit=-4535027504489825928';
+      var submitURL = (baseURL + email + submitRef);
+      console.log("success");
+      $(this)[0].method="POST";
+      $(this)[0].action=submitURL;
+      $('#input-email').addClass('active').val('Thank You!');
+    });
+</script>
