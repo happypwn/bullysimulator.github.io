@@ -2,15 +2,17 @@
 layout: landing
 ---
 				<!-- Banner -->
-
-
-
 					<section id="banner">
 						<div class="inner">
 							<h2>{{ site.title }}</h2>
 							<p>{{ site.description | markdownify }}</p>
 							<ul class="actions">
-							 <li><span class="button special"><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" onclick="trackOutboundLink('http://goo.gl/forms/abKSefkEKr0f9fIU2'); return false;" class="icon fa-envelope-o">Beta sign up</a></span></li>
+							 <li>
+								 <form id="input-form" action="" method="POST" target="no-target">
+							     <input id="input-email" placeholder="Email address" name="email" type="email" style="display: inline-block; width: 70%;">
+                   <button class="button special" id="form-submit" type="submit" style="float:right; width: 30%; padding-left: .5em; padding-right: .5em;">SIGN UP</button>
+							   </form>
+						  </li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -57,7 +59,7 @@ layout: landing
 							<ul class="actions vertical">
 								<li></li>
 								<li></li>
-								<li><span class="button"><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" onclick="trackOutboundLink('http://goo.gl/forms/abKSefkEKr0f9fIU2'); return false;" class="icon fa-envelope-o"> Beta sign up</a></span></li>
+								<li><span class="button fit"><a target="_blank" href="http://goo.gl/forms/abKSefkEKr0f9fIU2" onclick="trackOutboundLink('http://goo.gl/forms/abKSefkEKr0f9fIU2'); return false;" class="icon fa-envelope-o"> Beta sign up</a></span></li>
 								<li><span class="button fit"><a target="_blank" href="http://twitter.com/happypwn" onclick="trackOutboundLink('http://twitter.com/happypwn'); return false;" class="icon fa-twitter"> Twitter</a></span></li>
 								<li><span class="button fit"><a target="_blank" href="http://www.facebook.com/KirikoroStudios" onclick="trackOutboundLink('http://www.facebook.com/KirikoroStudios'); return false;" class="icon fa-facebook"> Facebook</a></span></li>
 								<li><span class="button fit"><a target="_blank" href="http://kirikoro.com" onclick="trackOutboundLink('http://kirikoro.com'); return false;" class="icon fa-connectdevelop"> Dev website</a></span></li>

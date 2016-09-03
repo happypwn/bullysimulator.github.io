@@ -6,6 +6,7 @@
 <script src="{{ "/js/util.js" | prepend: site.baseurl }}"></script>
 <!--[if lte IE 8]><script src="{{ "/js/ie/respond.min.js" | prepend: site.baseurl }}"></script><![endif]-->
 <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+{% include analytics-google.html %}
 <script>
     function validateEmail (email) {
         var email = email.replace("%40","@");
@@ -23,13 +24,16 @@
         $(this)[0].action="#menu";
         return;
       }
-
-      var baseURL = 'https://docs.google.com/a/kirikoro.com/forms/d/e/1FAIpQLSfZhuwJ_Yf1uVsYVS-v-_eAkYs4169QD4WmvHLvOQewS5PD8A/formResponse?entry.2112211593=';
-      var submitRef = '&submit=-4535027504489825928';
+      var baseURL = 'https://docs.google.com/a/kirikoro.com/forms/d/e/1FAIpQLSeZMrQpI-yV4Kg86oEVbYkKdPZ8nYdUIO0sjIgJBNveMRmpDg/formResponse?entry.392983083=';
+      var submitRef = '&submit=-3211557484975115163';
       var submitURL = (baseURL + email + submitRef);
       console.log("success");
       $(this)[0].method="POST";
       $(this)[0].action=submitURL;
       $('#input-email').addClass('active').val('Thank You!');
+      ga('send', 'event', 'outbound', 'click', 'signup', {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = "#menu";}
+      });
     });
 </script>
