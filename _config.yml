@@ -2,16 +2,18 @@
 #
 
 # Site settings
-title: Joy Drive
-description: Jump those kids across the wall!
+title: Bully Simulator
+description: How many kids can you take in a fight?
+description1:
+description2:
 owner: Kirikoro Studios # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: pontus.lindgren@kirikoro.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://joydrive.games" # the base hostname & protocol for your site
-analytics-google: 'UA-77458157-6'
+url: "http://bullysimulator.com" # the base hostname & protocol for your site
+analytics-google: 'UA-77458157-5'
 social:
-  twitter: https://twitter.com/happypwn
+  twitter: https://twitter.com/internethip
   #github: https://github.com/<username>
   #linkedin-square: https://linkedin.com/in/<username>
   facebook-official: https://facebook.com/kirikorostudios
